@@ -6,7 +6,7 @@ const message1 = document.querySelector(".reset");
 const gif1 = document.querySelector(".giphy-embed1");
 const gif = document.querySelector(".giphy-embed");
 const view = document.querySelector(".btn");
-const list = document.querySelector(".list p");
+//const list = document.querySelector(".list p");
 const start = document.querySelector(".start");
 let score = [,];
 score[0] = 0;
@@ -118,7 +118,7 @@ view.addEventListener("click", () => {
 });
 getScore();
 const getAnswer = () => {
-  list.classList.remove("ox-messages");
+  //list.classList.remove("ox-messages");
   if (
     player[1].toString().toLowerCase() ===
     response.value.toString().toLowerCase()
@@ -138,7 +138,7 @@ const getAnswer = () => {
   }
 };
 response.addEventListener("keyup", function (e) {
-  list.classList.remove("ox-messages");
+  //list.classList.remove("ox-messages");
   const keyName = e.key;
   if (keyName === "Enter") {
     getAnswer();
