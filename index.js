@@ -93,9 +93,9 @@ const getRandomQuestion = () => {
   console.log("Random Question", random);
   player = data[random];
   text.innerHTML = "What is the capital of " + player[0];
-  list.innerHTML = player[1] + ", " + player[0];
+  //list.innerHTML = player[1] + ", " + player[0];
   // Comment line below after comfortable with practice
-  list.classList.add("ox-messages");
+  //list.classList.add("ox-messages");
   response.focus();
 };
 const getScore = () => {
