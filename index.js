@@ -14,14 +14,12 @@ let round = 10;
 let maxWin = 0;
 let currentTurn = 0;
 const localScore = localStorage.getItem("score");
-console.log("local"+localScore);
+console.log("local" + localScore);
 if (localScore != null) {
   score[1] = JSON.parse(localScore);
-}else
-{
-  score[1] = 0
+} else {
+  score[1] = 0;
   //localScore.setItem("score", 0)
-
 }
 const data = [
   ["Alaska", "Juneau"],
@@ -55,7 +53,7 @@ const data = [
   ["North Carolina	", "Raleigh"],
   ["Virginia	", "Richmond"],
   ["Arkansas	", "Little Rock"],
-  ["Alabama	", "Montgomery	"],
+  ["Alabama	", "Montgomery"],
   ["Louisiana	", "Baton Rouge"],
   ["Mississippi	", "Jackson"],
   ["Pennsylvania	", "Harrisburg"],
@@ -65,16 +63,16 @@ const data = [
   ["Maine	", "Augusta"],
   ["Indiana	", "Indianapolis"],
   ["South Carolina	", "Columbia"],
-  ["West Virginia	", " Charleston"],
+  ["West Virginia	", "Charleston"],
   ["Maryland	", "Annapolis"],
-  ["Hawaii	", "Honolulu	"],
-  ["Massachusetts	", "Boston	"],
+  ["Hawaii	", "Honolulu"],
+  ["Massachusetts	", "Boston"],
   ["Vermont	", "Montpelier"],
-  ["New Hampshire	", "Concord	"],
-  ["New Jersey	", "Trenton	"],
+  ["New Hampshire	", "Concord"],
+  ["New Jersey	", "Trenton"],
   ["Connecticut	", "Hartford"],
   ["Delaware	", "Dover"],
-  ["Rhode ", "Island	Providence"],
+  ["Rhode Island", "Providence"],
 ];
 
 start.addEventListener("click", () => {
@@ -93,9 +91,9 @@ const getRandomQuestion = () => {
   console.log("Random Question", random);
   player = data[random];
   text.innerHTML = "What is the capital of " + player[0];
-  list.innerHTML = player[1] + ", " + player[0];
+  // list.innerHTML = player[1] + ", " + player[0];
   // Comment line below after comfortable with practice
-  list.classList.add("ox-messages");
+  // list.classList.add("ox-messages");
   response.focus();
 };
 const getScore = () => {
