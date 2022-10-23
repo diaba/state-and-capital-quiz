@@ -89,7 +89,7 @@ const reset = () => {
   // message.innerHTML =""
 };
 const getRandomQuestion = () => {
-  var random = Math.floor(Math.random() * 10) + 21;
+  var random = Math.floor(Math.random() * 10) + 31;
   console.log("Random Question", random);
   player = data[random];
   text.innerHTML = "What is the capital of " + player[0];
